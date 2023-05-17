@@ -271,7 +271,8 @@ input{
 }
 
 .blog-content{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     justify-content: space-between;
 }
 
@@ -297,6 +298,7 @@ input{
 .testimonios{
     
     text-align: center;
+    
     color: #ada6a6;
     margin: auto;
     
@@ -304,8 +306,10 @@ input{
 
 .testimo-content2{
     
+    
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,2fr);
+    justify-content: space-between;
     
 }
 
@@ -315,7 +319,7 @@ input{
 }
 
 .testi-1 img{
-    width: 200px;
+    width: 100px;
     border-radius: 100px;
 }
 
@@ -468,13 +472,19 @@ input{
 
     .testimo-content2{
         margin: 0;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2,3fr);
         
     }
 
     .testi-1{
         width: 100%;
         padding: 0;
+    }
+
+    .blog-content{
+        margin: 0;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
     }
 }
 
@@ -611,5 +621,11 @@ input{
     .testi-1{
         width: 100%;
         padding: 0;
+    }
+
+    .blog-content{
+        margin: 0;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
     }
 }
